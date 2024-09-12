@@ -1,0 +1,33 @@
+﻿@model Department 
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h1>Update</h1>
+<br />
+
+<form asp-action="Edit" asp-route-id=@Model.Id method="post">
+    <legend>Update Department</legend>
+    <div class="mb-3">
+        <label asp-for="Code" class="form-label"></label>
+        <input asp-for="Code" value="@Model.Code" class="form-control" />
+        <span asp-validation-for="Code" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" value="@Model.Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="DateOfCreation" class="form-label"></label>
+        <input asp-for="DateOfCreation" value="@Model.DateOfCreation" class="form-control" />
+    </div>
+    <br />
+    <input type="submit" class="btn btn-warning" value="Edit" />
+    <a class="btn btn-light" asp-action="Index">Back To List</a>
+</form>
+
+

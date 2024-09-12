@@ -1,0 +1,12 @@
+D:\Diploma\Diploma\ApplicationPL\ApplicationDAL\bin\Debug\net8.0\ApplicationDAL.deps.json
+D:\Diploma\Diploma\ApplicationPL\ApplicationDAL\bin\Debug\net8.0\ApplicationDAL.dll
+D:\Diploma\Diploma\ApplicationPL\ApplicationDAL\bin\Debug\net8.0\ApplicationDAL.pdb
+D:\Diploma\Diploma\ApplicationPL\ApplicationDAL\obj\Debug\net8.0\ApplicationDAL.csproj.AssemblyReference.cache
+D:\Diploma\Diploma\ApplicationPL\ApplicationDAL\obj\Debug\net8.0\ApplicationDAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Diploma\Diploma\ApplicationPL\ApplicationDAL\obj\Debug\net8.0\ApplicationDAL.AssemblyInfoInputs.cache
+D:\Diploma\Diploma\ApplicationPL\ApplicationDAL\obj\Debug\net8.0\ApplicationDAL.AssemblyInfo.cs
+D:\Diploma\Diploma\ApplicationPL\ApplicationDAL\obj\Debug\net8.0\ApplicationDAL.csproj.CoreCompileInputs.cache
+D:\Diploma\Diploma\ApplicationPL\ApplicationDAL\obj\Debug\net8.0\ApplicationDAL.dll
+D:\Diploma\Diploma\ApplicationPL\ApplicationDAL\obj\Debug\net8.0\refint\ApplicationDAL.dll
+D:\Diploma\Diploma\ApplicationPL\ApplicationDAL\obj\Debug\net8.0\ApplicationDAL.pdb
+D:\Diploma\Diploma\ApplicationPL\ApplicationDAL\obj\Debug\net8.0\ref\ApplicationDAL.dll
