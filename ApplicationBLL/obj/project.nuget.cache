@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2cSGnkzvjE8=",
+  "dgSpecHash": "rAdBvW3qqbo=",
   "success": true,
-  "projectFilePath": "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationBLL\\ApplicationBLL.csproj",
+  "projectFilePath": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationBLL\\ApplicationBLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

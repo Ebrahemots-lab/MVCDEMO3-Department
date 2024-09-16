@@ -16,7 +16,7 @@ namespace ApplicationPL.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            IEnumerable<Department> result = _deptBLL.GetAll();
+            IEnumerable<Department> result = _deptBLL.ShowAll();
             return View(model: result);
         }
 
@@ -70,7 +70,7 @@ namespace ApplicationPL.Controllers
             return View(model: dept);
         }
 
-        [HttpPost]
+       
         public IActionResult Edit(int id, Department dept)
 
         {
@@ -83,8 +83,8 @@ namespace ApplicationPL.Controllers
                     returnedDept.Code = dept.Code;
                     returnedDept.Name = dept.Name;
                     returnedDept.DateOfCreation = dept.DateOfCreation;
-                    int resultNumber = _deptBLL.Save();
-
+                    _deptBLL.Save();
+                    
                     return RedirectToAction("Index");
 
                 }
@@ -93,11 +93,20 @@ namespace ApplicationPL.Controllers
             return View("Update", dept);
     
         }
+
         public IActionResult Delete(int id) 
         {
            Department dept = _deptBLL.Get(id);
            _deptBLL.Delete(dept);
             return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+       public IActionResult Test(string name, int age , string[] colors) 
+        {
+            var result = Request.QueryString.ToString();
+            Console.WriteLine(result);
+            return Content($"{name} {age}");
         }
     }
 

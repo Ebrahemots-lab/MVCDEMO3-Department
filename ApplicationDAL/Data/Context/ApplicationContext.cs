@@ -23,5 +23,7 @@ namespace ApplicationDAL.Data.Context
 
 
         public DbSet<Department> departments { get; set; }
+
+        public DbSet<Employee> employees { get; set; }
     }
 }

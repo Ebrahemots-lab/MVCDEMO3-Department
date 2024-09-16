@@ -17,55 +17,71 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ApplicationPL
 build_property.RootNamespace = ApplicationPL
-build_property.ProjectDir = D:\Diploma\Diploma\ApplicationPL\ApplicationPL\
+build_property.ProjectDir = D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Diploma\Diploma\ApplicationPL\ApplicationPL
+build_property.MSBuildProjectDirectory = D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Diploma/Diploma/ApplicationPL/ApplicationPL/Views/Department/Create.cshtml]
+[D:/Diploma/Diploma/MVCDEMO3-Department/ApplicationPL/Views/Department/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Diploma/Diploma/ApplicationPL/ApplicationPL/Views/Department/Details.cshtml]
+[D:/Diploma/Diploma/MVCDEMO3-Department/ApplicationPL/Views/Department/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Diploma/Diploma/ApplicationPL/ApplicationPL/Views/Department/Index.cshtml]
+[D:/Diploma/Diploma/MVCDEMO3-Department/ApplicationPL/Views/Department/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Diploma/Diploma/ApplicationPL/ApplicationPL/Views/Department/Update.cshtml]
+[D:/Diploma/Diploma/MVCDEMO3-Department/ApplicationPL/Views/Department/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Diploma/Diploma/ApplicationPL/ApplicationPL/Views/Home/Index.cshtml]
+[D:/Diploma/Diploma/MVCDEMO3-Department/ApplicationPL/Views/Employee/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diploma/Diploma/MVCDEMO3-Department/ApplicationPL/Views/Employee/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diploma/Diploma/MVCDEMO3-Department/ApplicationPL/Views/Employee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diploma/Diploma/MVCDEMO3-Department/ApplicationPL/Views/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Diploma/Diploma/MVCDEMO3-Department/ApplicationPL/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Diploma/Diploma/ApplicationPL/ApplicationPL/Views/Home/Privacy.cshtml]
+[D:/Diploma/Diploma/MVCDEMO3-Department/ApplicationPL/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Diploma/Diploma/ApplicationPL/ApplicationPL/Views/Shared/Error.cshtml]
+[D:/Diploma/Diploma/MVCDEMO3-Department/ApplicationPL/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Diploma/Diploma/ApplicationPL/ApplicationPL/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Diploma/Diploma/MVCDEMO3-Department/ApplicationPL/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Diploma/Diploma/ApplicationPL/ApplicationPL/Views/_ViewImports.cshtml]
+[D:/Diploma/Diploma/MVCDEMO3-Department/ApplicationPL/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Diploma/Diploma/ApplicationPL/ApplicationPL/Views/_ViewStart.cshtml]
+[D:/Diploma/Diploma/MVCDEMO3-Department/ApplicationPL/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Diploma/Diploma/ApplicationPL/ApplicationPL/Views/Shared/_Layout.cshtml]
+[D:/Diploma/Diploma/MVCDEMO3-Department/ApplicationPL/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ptbyhjzy40

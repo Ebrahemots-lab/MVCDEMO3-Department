@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationPL\\ApplicationPL.csproj": {}
+    "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\ApplicationPL.csproj": {}
   },
   "projects": {
-    "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationBLL\\ApplicationBLL.csproj": {
+    "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationBLL\\ApplicationBLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationBLL\\ApplicationBLL.csproj",
+        "projectUniqueName": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationBLL\\ApplicationBLL.csproj",
         "projectName": "ApplicationBLL",
-        "projectPath": "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationBLL\\ApplicationBLL.csproj",
+        "projectPath": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationBLL\\ApplicationBLL.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationBLL\\obj\\",
+        "outputPath": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationBLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "G:\\MVS\\New folder (2)\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationDAL\\ApplicationDAL.csproj": {
-                "projectPath": "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationDAL\\ApplicationDAL.csproj"
+              "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationDAL\\ApplicationDAL.csproj": {
+                "projectPath": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationDAL\\ApplicationDAL.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationDAL\\ApplicationDAL.csproj": {
+    "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationDAL\\ApplicationDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationDAL\\ApplicationDAL.csproj",
+        "projectUniqueName": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationDAL\\ApplicationDAL.csproj",
         "projectName": "ApplicationDAL",
-        "projectPath": "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationDAL\\ApplicationDAL.csproj",
+        "projectPath": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationDAL\\ApplicationDAL.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationDAL\\obj\\",
+        "outputPath": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "G:\\MVS\\New folder (2)\\NuGetPackages"
@@ -144,14 +144,14 @@
         }
       }
     },
-    "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationPL\\ApplicationPL.csproj": {
+    "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\ApplicationPL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationPL\\ApplicationPL.csproj",
+        "projectUniqueName": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\ApplicationPL.csproj",
         "projectName": "ApplicationPL",
-        "projectPath": "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationPL\\ApplicationPL.csproj",
+        "projectPath": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\ApplicationPL.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationPL\\obj\\",
+        "outputPath": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "G:\\MVS\\New folder (2)\\NuGetPackages"
@@ -173,11 +173,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationBLL\\ApplicationBLL.csproj": {
-                "projectPath": "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationBLL\\ApplicationBLL.csproj"
+              "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationBLL\\ApplicationBLL.csproj": {
+                "projectPath": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationBLL\\ApplicationBLL.csproj"
               },
-              "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationDAL\\ApplicationDAL.csproj": {
-                "projectPath": "D:\\Diploma\\Diploma\\ApplicationPL\\ApplicationDAL\\ApplicationDAL.csproj"
+              "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationDAL\\ApplicationDAL.csproj": {
+                "projectPath": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationDAL\\ApplicationDAL.csproj"
               }
             }
           }
