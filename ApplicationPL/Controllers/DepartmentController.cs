@@ -101,13 +101,13 @@ namespace ApplicationPL.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpGet]
-       public IActionResult Test(string name, int age , string[] colors) 
-        {
-            var result = Request.QueryString.ToString();
-            Console.WriteLine(result);
-            return Content($"{name} {age}");
-        }
+        
+       //public IActionResult Test(string name, int age , string[] colors) 
+       // {
+       //     var result = Request.QueryString.ToString();
+       //     Console.WriteLine(result);
+       //     return Content($"{name} {age}");
+       // }
     }
 
     

@@ -1,44 +1,19 @@
 ﻿@model Employee
 @{
+
     ViewData["Title"] = "Add";
 }
 
 <h1>Add New Employee</h1>
 
 <form asp-action="Add" method="post">
-<div class="mb-3">
-    <label asp-for="Name" class="form-label"></label>
-    <input asp-for="@Model.Name"  class="form-control"></input>
-    <span asp-validation-for="@Model.Name" class="text-danger"></span>
-</div>
-<div class="mb-3">
-    <label asp-for="Age" class="form-label"></label>
-    <input asp-for="@Model.Age" class="form-control"></input>
-    <span asp-validation-for="@Model.Age" class="text-danger"></span>
-</div>
-<div class="mb-3">
-    <label asp-for="Adress" class="form-label"></label>
-    <input asp-for="@Model.Adress"  class="form-control"></input>
-    <span asp-validation-for="@Model.Adress" class="text-danger"></span>
-</div>
-<div class="mb-3">
-    <label asp-for="Phone" class="form-label"></label>
-    <input asp-for="@Model.Phone"  class="form-control"></input>
-</div>
-<div class="mb-3">
-    <label asp-for="Salary" class="form-label"></label>
-    <input asp-for="@Model.Salary"  class="form-control"></input>
-</div>
-<div class="mb-3">
-    <label asp-for="IsActive" class="form-label"></label>
-    <input asp-for="@Model.IsActive"  class="form-control"></input>
-</div>
-<div class="mb-3">
-    <label asp-for="HireDate" class="form-label"></label>
-    <input asp-for="@Model.HireDate"  class="form-control"></input>
+    <partial name="PartialViews/AddUpdatePartialView" />
 
-
-    <br />
     <input type="submit" value="Add" class="btn btn-success" />
     <a asp-action="Index" class="btn btn-light">Back To List</a>
 </form>
+
+
+@section ValidationSection {
+        <partial name="_ValidationScriptsPartial">
+}

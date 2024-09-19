@@ -189,6 +189,162 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\css\\font-awesome.css"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\less\\animated.less",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\less\\animated.less"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\less\\core.less",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\less\\core.less"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\less\\fixed-width.less"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\less\\font-awesome.less"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\less\\icons.less",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\less\\icons.less"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\less\\larger.less",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\less\\larger.less"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\less\\list.less",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\less\\list.less"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\less\\mixins.less"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\less\\path.less",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\less\\path.less"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\less\\screen-reader.less"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\less\\stacked.less"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\less\\variables.less",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\less\\variables.less"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\scss\\_animated.scss"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\scss\\_core.scss"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\scss\\_icons.scss"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\scss\\_larger.scss"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\scss\\_list.scss"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\scss\\_path.scss"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\scss\\_variables.scss"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\font\\font-awesome-4.7.0\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\font\\font-awesome-4.7.0\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\imgs\\linux.jpg",
+      "PackagePath": "staticwebassets\\imgs\\linux.jpg"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\imgs\\linux2.png",
+      "PackagePath": "staticwebassets\\imgs\\linux2.png"
+    },
+    {
       "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

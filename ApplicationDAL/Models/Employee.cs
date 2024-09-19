@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace ApplicationDAL.Models
 {
     //Creation of Employee Model
     public class Employee
     {
+      
+
         public int Id { get; set; }
 
         [Required(ErrorMessage ="Age is Required")]
@@ -26,17 +25,30 @@ namespace ApplicationDAL.Models
         [DataType(DataType.Currency)] //This will change it to currency in SQL
         public decimal Salary { get; set; }
 
-        public bool? IsActive { get; set; }
+        [Display(Name="Status")]
+        public bool IsActive { get; set; }
 
-        [EmailAddress]
+        [EmailAddress(ErrorMessage ="Email is Required")]
         public string? EmailAdress { get; set; }
 
         public string? Phone { get; set; }
 
+        public string? Img { get; set; }
+
+
         [Display(Name="Hiring Date")]
-        public DateTime HireDate { get; set; }
+        [Column(TypeName="datetime")]
+        public DateTime HireDate { get; set; } = DateTime.Now;
 
         public DateTime CreationDate { get; set; } = DateTime.Now;
+
+        //RelationShip
+        [ForeignKey("Department")]
+        [Display(Name="Department")]
+        public int DepartmentId { get; set; }
+
+        public Department? Department { get; set; }
+       
 
     }
 }

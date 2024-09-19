@@ -1,6 +1,7 @@
 ﻿using ApplicationBLL.Interfaces;
 using ApplicationDAL.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.Routing;
 
 namespace ApplicationPL.Controllers
@@ -8,10 +9,12 @@ namespace ApplicationPL.Controllers
     public class EmployeeController : Controller
     {
         private IEmployeeRepository _empRepo;
+        private IDepartmentRepository _departmentRepo;
 
-        public EmployeeController(IEmployeeRepository empRepo)
+        public EmployeeController(IEmployeeRepository empRepo , IDepartmentRepository dept)
         {
             _empRepo = empRepo;
+            _departmentRepo = dept; 
         }
 
         public IActionResult Index()
@@ -26,10 +29,23 @@ namespace ApplicationPL.Controllers
             return View(emp);
         }
 
-        public IActionResult Edit(int id) 
+        public IActionResult Update(int id) 
         {
             //Get the Employee That we pressed on 
             Employee emp = _empRepo.Get(id);
+
+            var deptsInfo = _departmentRepo.ShowAll();
+
+            //var SelectedDept = new List<SelectListItem>() { new SelectListItem() { Text="Ots" , Value="1"} };
+
+
+            //foreach(var dept in deptsInfo) 
+            //{
+
+            //    SelectedDept.Add(new SelectListItem() { Text=dept.Name , Value = dept.Id.ToString()});
+            //}
+
+            ViewBag.Depts = new SelectList(_departmentRepo.ShowAll(),"Id","Name");
 
             return View(emp);
         }
@@ -37,6 +53,8 @@ namespace ApplicationPL.Controllers
         [HttpPost]
         public IActionResult Edit(int id,Employee emp) 
         {
+            ViewBag.Depts = new SelectList(_departmentRepo.ShowAll(), "Id", "Name");
+
             if (ModelState.IsValid) 
             {
                 //Get the old Employee 
@@ -50,6 +68,8 @@ namespace ApplicationPL.Controllers
                 oldEmp.Salary = emp.Salary;
                 oldEmp.IsActive = emp.IsActive;
                 oldEmp.HireDate = emp.HireDate;
+                oldEmp.DepartmentId = emp.DepartmentId;
+                oldEmp.Img = emp.Img;
 
                 //Save changes
                 _empRepo.Save();
@@ -77,14 +97,20 @@ namespace ApplicationPL.Controllers
             
         }
 
+        public IActionResult Add() 
+        {
+            ViewBag.Depts = new SelectList(_departmentRepo.ShowAll(), "Id", "Name");
+            return View();
+        }
 
+        [HttpPost]
         public IActionResult Add(Employee Emp) 
         {
 
             if (ModelState.IsValid) 
             {
                 _empRepo.Add(Emp);
-                _empRepo.Save();
+                _empRepo.Save();      
                 return RedirectToAction("Index");
             }
             else 

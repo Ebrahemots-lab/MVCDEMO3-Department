@@ -1,10 +1,7 @@
 ﻿using ApplicationBLL.Interfaces;
 using ApplicationDAL.Data.Context;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ApplicationDAL.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApplicationBLL.Repositories
 {
@@ -20,7 +17,14 @@ namespace ApplicationBLL.Repositories
 
         public IEnumerable<T> ShowAll()
         {
-            return _context.Set<T>().ToList();
+            if (typeof(T) == typeof(Employee))
+            {
+                return (IEnumerable<T>) _context.employees.Include(E => E.Department).ToList();
+            }
+            else 
+            {
+              return _context.Set<T>().ToList();
+            }
         }
 
         public T Get(int id)

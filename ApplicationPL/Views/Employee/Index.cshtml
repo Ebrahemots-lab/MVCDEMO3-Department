@@ -8,38 +8,54 @@
 <a class="btn btn-primary" asp-action="Add">Add New Employee</a>
 <br />
 <br />
-@if(@Model.Count() > 0)
+@if (@Model.Count() > 0)
 {
     <table class="table">
-       <thead>
-        <th>@Html.DisplayNameFor(E => E.Name)</th>
-        <th>@Html.DisplayNameFor(E => E.Age)</th>
-        <th>@Html.DisplayNameFor(E => E.EmailAdress)</th>
-        <th>@Html.DisplayNameFor(E => E.Phone)</th>
-        <th>@Html.DisplayNameFor(E => E.Salary)</th>
-        <th>@Html.DisplayNameFor(E => E.IsActive)</th>
-        <th>@Html.DisplayNameFor(E => E.HireDate)</th>
-        <th>Details</th>
-        <th>Update</th>
-        <th>Delete</th>
-       </thead>
-       <tbody>
-           @foreach(var emp in @Model)
+        <thead>
+            <tr>
+                <td>@Html.DisplayNameFor(E => E.Name)</td>
+                <td>@Html.DisplayNameFor(E => E.Age)</td>
+                <td>@Html.DisplayNameFor(E => E.EmailAdress)</td>
+                <td>@Html.DisplayNameFor(E => E.Phone)</td>
+                <td>@Html.DisplayNameFor(E => E.Salary)</td>
+                <td>@Html.DisplayNameFor(E => E.IsActive)</td>
+                <td>@Html.DisplayNameFor(E => E.HireDate)</td>
+                <td>@Html.DisplayNameFor(E => E.DepartmentId)</td>
+                <td>@Html.DisplayNameFor(E => E.Img)</td>
+                <td>Details</td>
+                <td>Update</td>
+                <td>Delete</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var emp in @Model)
             {
-            <td>@emp.Name</td>
-            <td>@emp.Age</td>
-            <td>@emp.EmailAdress</td>
-            <td>@emp.Phone</td>
-            <td>@emp.Salary</td>
-            <td>@Html.DisplayFor(E => emp.IsActive)</td>
-            <td>@emp.HireDate</td>
-            <td><a class="btn btn-success" asp-action="Details" asp-route-id="@emp.Id">Details</a></td>
-            <td><a class="btn btn-warning" asp-action="Edit" asp-route-id="@emp.Id">Update</a></td>
-            <td><a class="btn btn-danger" asp-action="Delete" asp-route-id = "@emp.Id">Delete</a></td>
+                <tr>
+                    <td>@emp.Name</td>
+                    <td>@emp.Age</td>
+                    <td>@Html.DisplayFor(E => emp.EmailAdress)</td>
+                    <td>@emp.Phone</td>
+                    <td>@Html.DisplayFor(E => emp.Salary)</td> @* this will show the data based on it's datatype' *@
+                    @* <td>@Html.DisplayFor(E => emp.IsActive)</td> *@
+                    <td>
+                        @if (emp.IsActive == true)
+                        {
+                            <i class="fa-solid fa-circle" style="color:green"></i>
+                        }else
+                        {
+                            <i class="fa-solid fa-circle" style="color:red"></i>                            
+                        }
+                    </td>
+                    <td>@emp.HireDate</td>
+                    <td>@emp.Department.Name</td>
+                    <td><img src="/imgs/@emp.Img"style="width:30px" /></td>
+                    <partial name="_ButtonPartial" model="@emp.Id" />
+                </tr>
             }
         </tbody>
     </table>
-}else
+}
+else
 {
     <br />
     <div style="color:orange">

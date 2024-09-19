@@ -1,0 +1,50 @@
+﻿@model Employee
+<div class="mb-3">
+    <label asp-for="Name" class="form-label"></label>
+    <input asp-for="Name" class="form-control"></input>
+    <span asp-validation-for="@Model.Name" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="Age" class="form-label"></label>
+    <input asp-for="Age" class="form-control"></input>
+    <span asp-validation-for="@Model.Age" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="EmailAdress" class="form-label"></label>
+    <input asp-for="EmailAdress" class="form-control"></input>
+    <span asp-validation-for="@Model.EmailAdress" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="Adress" class="form-label"></label>
+    <input asp-for="Adress" class="form-control"></input>
+    <span asp-validation-for="@Model.Adress" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="Phone" class="form-label"></label>
+    <input asp-for="Phone" class="form-control"></input>
+</div>
+<div class="mb-3">
+    <label asp-for="Salary" class="form-label"></label>
+    <input asp-for="Salary" class="form-control"></input>
+</div>
+<div class="mb-3">
+    <label class="form-label"> Department</label>
+    <select asp-for="DepartmentId" asp-items="ViewBag.Depts" class="form-control">
+        <option value="">Please Select one</option>
+    </select>
+    <div class="mb-3">
+        <label asp-for="Img" class="form-label"></label>
+        <input asp-for="Img" class="form-control"></input>
+    </div>
+    <div class="mb-3">
+        <label name="IsActive" class="form-label">Active</label>
+        <br />
+        <input id="IsActive" type="checkbox" value="true" name="IsActive" />
+        <input type="hidden" value="false" name="IsActive" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="HireDate" class="form-label"></label>
+        <input asp-for="HireDate" class="form-control"></input>
+
+    </div>
+    <br />

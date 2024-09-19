@@ -9,7 +9,6 @@
       "ApplicationPL/1.0.0": {
         "dependencies": {
           "ApplicationBLL": "1.0.0",
-          "ApplicationDAL": "1.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.8",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.5",
           "bootstrap": "5.3.3"

@@ -175,9 +175,6 @@
             "projectReferences": {
               "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationBLL\\ApplicationBLL.csproj": {
                 "projectPath": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationBLL\\ApplicationBLL.csproj"
-              },
-              "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationDAL\\ApplicationDAL.csproj": {
-                "projectPath": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationDAL\\ApplicationDAL.csproj"
               }
             }
           }

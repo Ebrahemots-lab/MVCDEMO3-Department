@@ -8073,7 +8073,6 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "ApplicationBLL >= 1.0.0",
-      "ApplicationDAL >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.8",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.5",
       "bootstrap >= 5.3.3"
@@ -8114,9 +8113,6 @@
           "projectReferences": {
             "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationBLL\\ApplicationBLL.csproj": {
               "projectPath": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationBLL\\ApplicationBLL.csproj"
-            },
-            "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationDAL\\ApplicationDAL.csproj": {
-              "projectPath": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationDAL\\ApplicationDAL.csproj"
             }
           }
         }

@@ -29,9 +29,8 @@
                 <td>@dept.Code</td>
                 <td>@dept.Name</td>
                 <td>@dept.DateOfCreation</td>
-                    <td><a class="btn btn-warning" asp-action="Details" asp-route-id=@dept.Id>Details</a></td>
-                    <td><a class="btn btn-success" asp-action="Update" asp-route-id=@dept.Id>Update</a></td>
-                    <td><a class="btn btn-danger" asp-action="Delete" asp-route-id=@dept.Id>Delete</a></td>
+
+                 <partial name="_ButtonPartial" model="@dept.Id"/>
             </tr>            
         }
 
