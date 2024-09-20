@@ -511,3 +511,5 @@ D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\obj\Debug\net8.0\refint\App
 D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\obj\Debug\net8.0\ApplicationPL.pdb
 D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\obj\Debug\net8.0\ApplicationPL.genruntimeconfig.cache
 D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\obj\Debug\net8.0\ref\ApplicationPL.dll
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\bin\Debug\net8.0\AutoMapper.dll
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

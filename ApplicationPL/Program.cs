@@ -1,9 +1,8 @@
 using ApplicationBLL.Interfaces;
 using ApplicationBLL.Repositories;
 using ApplicationDAL.Data.Context;
+using ApplicationPL.Controllers.MappingProfiles;
 using Microsoft.EntityFrameworkCore;
-
-
 
 namespace ApplicationPL
 {
@@ -22,6 +21,8 @@ namespace ApplicationPL
 
             builder.Services.AddScoped<IDepartmentRepository , DepartmentRepository>();
             builder.Services.AddScoped<IEmployeeRepository , EmployeeRepository>();
+
+            builder.Services.AddAutoMapper(typeof(EmployeeMapping));
 
             ;
             var app = builder.Build();
