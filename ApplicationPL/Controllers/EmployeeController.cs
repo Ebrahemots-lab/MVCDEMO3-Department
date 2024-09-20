@@ -5,6 +5,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.Routing;
+using System.Collections.Generic;
 
 namespace ApplicationPL.Controllers
 {
@@ -35,6 +36,12 @@ namespace ApplicationPL.Controllers
             }
         }
 
+        //Searching Task
+        //1 - Create Form that has input and search button 
+        //2 - If the value is wrong or null -> show all Employee 
+        //3 - if the value is not null -> search for all emps that contains this name
+
+
         public IActionResult Index()
         {
             IEnumerable<Employee> list = _empRepo.ShowAll();
@@ -43,6 +50,33 @@ namespace ApplicationPL.Controllers
 
             return View(model: mappedEmps);
         }
+
+        [HttpPost]
+        public IActionResult Index(string searchedName)
+        {
+            
+            //Get name from user Form
+            //Check for null 
+            if(string.IsNullOrEmpty(searchedName)) 
+            {
+                IEnumerable<Employee> list = _empRepo.ShowAll();
+
+                IEnumerable<EmployeeViewModel> mappedEmps = _mapper.Map<IEnumerable<Employee>, IEnumerable<EmployeeViewModel>>(list);
+
+                return View(model: mappedEmps);
+            }
+            else 
+            {
+                IEnumerable<Employee> searchedEmps = _empRepo.SearchEmps(searchedName);
+
+                IEnumerable<EmployeeViewModel> mappedEmps = _mapper.Map<IEnumerable<Employee>, IEnumerable<EmployeeViewModel>>(searchedEmps);
+
+                return View(mappedEmps);
+            }
+        }
+
+           
+        
 
         public IActionResult Details(int id) 
         {
