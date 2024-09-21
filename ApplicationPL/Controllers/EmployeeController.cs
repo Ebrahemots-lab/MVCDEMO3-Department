@@ -11,18 +11,16 @@ namespace ApplicationPL.Controllers
 {
     public class EmployeeController : Controller
     {
-        private IEmployeeRepository _empRepo;
-        private IDepartmentRepository _departmentRepo;
 
         private IMapper _mapper;
 
-        public EmployeeController(IEmployeeRepository empRepo , IDepartmentRepository dept , IMapper mapper)
+        private IUnitOfWork _unit { get; }
+
+        public EmployeeController(IUnitOfWork unit , IMapper mapper)
         {
-            _empRepo = empRepo;
-            _departmentRepo = dept;
+            _unit = unit;
             _mapper = mapper;
         }
-
 
         public IActionResult UniqueName(string Name) 
         {
@@ -36,15 +34,9 @@ namespace ApplicationPL.Controllers
             }
         }
 
-        //Searching Task
-        //1 - Create Form that has input and search button 
-        //2 - If the value is wrong or null -> show all Employee 
-        //3 - if the value is not null -> search for all emps that contains this name
-
-
         public IActionResult Index()
         {
-            IEnumerable<Employee> list = _empRepo.ShowAll();
+            IEnumerable<Employee> list = _unit.EmployeeRepository.ShowAll();
 
             IEnumerable<EmployeeViewModel> mappedEmps = _mapper.Map<IEnumerable<Employee>,IEnumerable<EmployeeViewModel>>(list);
 
@@ -54,12 +46,16 @@ namespace ApplicationPL.Controllers
         [HttpPost]
         public IActionResult Index(string searchedName)
         {
-            
+
+            //Searching Task
+            //1 - Create Form that has input and search button 
+            //2 - If the value is wrong or null -> show all Employee 
+            //3 - if the value is not null -> search for all emps that contains this name
             //Get name from user Form
             //Check for null 
-            if(string.IsNullOrEmpty(searchedName)) 
+            if (string.IsNullOrEmpty(searchedName)) 
             {
-                IEnumerable<Employee> list = _empRepo.ShowAll();
+                IEnumerable<Employee> list = _unit.EmployeeRepository.ShowAll();
 
                 IEnumerable<EmployeeViewModel> mappedEmps = _mapper.Map<IEnumerable<Employee>, IEnumerable<EmployeeViewModel>>(list);
 
@@ -67,20 +63,18 @@ namespace ApplicationPL.Controllers
             }
             else 
             {
-                IEnumerable<Employee> searchedEmps = _empRepo.SearchEmps(searchedName);
+                IEnumerable<Employee> searchedEmps = _unit.EmployeeRepository.SearchEmps(searchedName);
 
                 IEnumerable<EmployeeViewModel> mappedEmps = _mapper.Map<IEnumerable<Employee>, IEnumerable<EmployeeViewModel>>(searchedEmps);
 
                 return View(mappedEmps);
             }
         }
-
-           
         
 
         public IActionResult Details(int id) 
         {
-            Employee emp = _empRepo.Get(id);
+            Employee emp = _unit.EmployeeRepository.Get(id);
 
             EmployeeViewModel mappedEmp = _mapper.Map<Employee, EmployeeViewModel>(emp);
 
@@ -90,15 +84,15 @@ namespace ApplicationPL.Controllers
         public IActionResult Update(int id) 
         {
             //Get the Employee That we pressed on 
-            Employee emp = _empRepo.Get(id);
+            Employee emp = _unit.EmployeeRepository.Get(id);
 
             EmployeeViewModel mappedEmp = _mapper.Map<Employee, EmployeeViewModel>(emp);
 
-            var deptsInfo = _departmentRepo.ShowAll();
+            var deptsInfo = _unit.DepartmentRepository.ShowAll();
 
         
 
-            ViewBag.Depts = new SelectList(_departmentRepo.ShowAll(),"Id","Name");
+            ViewBag.Depts = new SelectList(_unit.DepartmentRepository.ShowAll(),"Id","Name");
 
             return View(mappedEmp);
         }
@@ -106,7 +100,7 @@ namespace ApplicationPL.Controllers
         [HttpPost]
         public IActionResult Edit([FromRoute] int id,EmployeeViewModel empVM) 
         {
-            ViewBag.Depts = new SelectList(_departmentRepo.ShowAll(), "Id", "Name");
+            ViewBag.Depts = new SelectList(_unit.DepartmentRepository.ShowAll(), "Id", "Name");
 
             if (ModelState.IsValid) 
             {
@@ -114,8 +108,8 @@ namespace ApplicationPL.Controllers
                 Employee mappedEmp = _mapper.Map<EmployeeViewModel, Employee>(empVM);
             
 
-                _empRepo.Update(mappedEmp);
-                _empRepo.Save();
+                _unit.EmployeeRepository.Update(mappedEmp);
+                _unit.EmployeeRepository.Save();
 
                 return RedirectToAction("Index");
             }
@@ -125,13 +119,13 @@ namespace ApplicationPL.Controllers
 
         public IActionResult Delete(int id) 
         {
-            Employee emp = _empRepo.Get(id);
+            Employee emp = _unit.EmployeeRepository.Get(id);
 
             if(emp != null) 
             {
-                _empRepo.Delete(emp);
+                _unit.EmployeeRepository.Delete(emp);
 
-                _empRepo.Save();
+                _unit.EmployeeRepository.Save();
 
                 return RedirectToAction("Index");
             }
@@ -142,7 +136,7 @@ namespace ApplicationPL.Controllers
 
         public IActionResult Add() 
         {
-            ViewBag.Depts = new SelectList(_departmentRepo.ShowAll(), "Id", "Name");
+            ViewBag.Depts = new SelectList(_unit.DepartmentRepository.ShowAll(), "Id", "Name");
             return View();
         }
 
@@ -154,8 +148,8 @@ namespace ApplicationPL.Controllers
             {
                 Employee mappedEmp = _mapper.Map<EmployeeViewModel, Employee>(EmpVm);
 
-                _empRepo.Add(mappedEmp);
-                _empRepo.Save();      
+                _unit.EmployeeRepository.Add(mappedEmp);
+                _unit.EmployeeRepository.Save();      
                 return RedirectToAction("Index");
             }
             else 

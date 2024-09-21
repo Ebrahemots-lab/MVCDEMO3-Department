@@ -6,17 +6,17 @@ namespace ApplicationPL.Controllers
 {
     public class DepartmentController : Controller
     {
-        private readonly IDepartmentRepository _deptBLL;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public DepartmentController(IDepartmentRepository deptBl)
+        public DepartmentController(IUnitOfWork unitOfWork)
         {
-            _deptBLL = deptBl;
+            _unitOfWork = unitOfWork;
         }
 
         [HttpGet]
         public IActionResult Index()
         {
-            IEnumerable<Department> result = _deptBLL.ShowAll();
+            IEnumerable<Department> result = _unitOfWork.DepartmentRepository.ShowAll();
             return View(model: result);
         }
 
@@ -33,7 +33,7 @@ namespace ApplicationPL.Controllers
 
             if (ModelState.IsValid)
             {
-                int resultNumber = _deptBLL.Add(dept);
+                int resultNumber = _unitOfWork.DepartmentRepository.Add(dept);
                 if (resultNumber > 0)
                 {
                     return RedirectToAction("Index");
@@ -51,7 +51,7 @@ namespace ApplicationPL.Controllers
             }
             else
             {
-                Department dept = _deptBLL.Get(id.Value);
+                Department dept = _unitOfWork.DepartmentRepository.Get(id.Value);
 
                 if (dept is null) return NotFound();
 
@@ -66,7 +66,7 @@ namespace ApplicationPL.Controllers
             {
                 return BadRequest();
             }
-            Department dept = _deptBLL.Get(id.Value);
+            Department dept = _unitOfWork.DepartmentRepository.Get(id.Value);
             return View(model: dept);
         }
 
@@ -74,7 +74,7 @@ namespace ApplicationPL.Controllers
         public IActionResult Edit(int id, Department dept)
 
         {
-            Department returnedDept = _deptBLL.Get(id);
+            Department returnedDept = _unitOfWork.DepartmentRepository.Get(id);
 
             if (returnedDept != null)
             {
@@ -83,7 +83,7 @@ namespace ApplicationPL.Controllers
                     returnedDept.Code = dept.Code;
                     returnedDept.Name = dept.Name;
                     returnedDept.DateOfCreation = dept.DateOfCreation;
-                    _deptBLL.Save();
+                    _unitOfWork.DepartmentRepository.Save();
                     
                     return RedirectToAction("Index");
 
@@ -96,8 +96,8 @@ namespace ApplicationPL.Controllers
 
         public IActionResult Delete(int id) 
         {
-           Department dept = _deptBLL.Get(id);
-           _deptBLL.Delete(dept);
+           Department dept = _unitOfWork.DepartmentRepository.Get(id);
+            _unitOfWork.DepartmentRepository.Delete(dept);
             return RedirectToAction("Index");
         }
 
