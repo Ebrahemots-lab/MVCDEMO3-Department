@@ -1,6 +1,9 @@
 ﻿using ApplicationBLL.Interfaces;
 using ApplicationDAL.Models;
+using ApplicationPL.Models;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace ApplicationPL.Controllers
 {
@@ -8,16 +11,26 @@ namespace ApplicationPL.Controllers
     {
         private readonly IUnitOfWork _unitOfWork;
 
-        public DepartmentController(IUnitOfWork unitOfWork)
+        private readonly IMapper _mapper;   
+
+        public DepartmentController(IUnitOfWork unitOfWork , IMapper mapper)
         {
             _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
 
         [HttpGet]
         public IActionResult Index()
         {
-            IEnumerable<Department> result = _unitOfWork.DepartmentRepository.ShowAll();
-            return View(model: result);
+
+            //Get all Department
+            IEnumerable<Department> models = _unitOfWork.DepartmentRepository.ShowAll();
+
+            //Convert it to Ienumrable of DepartmentViewModel
+            IEnumerable<DepartmentViewModel> depts = _mapper.Map<IEnumerable<Department>, IEnumerable<DepartmentViewModel>>(models);
+
+
+            return View(model: depts);
         }
 
         [HttpGet]

@@ -25,7 +25,9 @@ namespace ApplicationPL
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             builder.Services.AddAutoMapper(typeof(EmployeeMapping));
+            builder.Services.AddAutoMapper(typeof(DepartmentProfile));
 
+            builder.Services.AddSession(option => option.IdleTimeout = TimeSpan.FromMinutes(30));
          
             var app = builder.Build();
 
@@ -40,6 +42,8 @@ namespace ApplicationPL
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseSession();
+
             app.UseRouting();
 
             app.UseAuthorization();
@@ -53,6 +57,10 @@ namespace ApplicationPL
     }
 }
 
-//TODO
-//Aplication didn't LOad department when we add New emp and not enter the right inputs..
-//Fix edit button on Details
+
+//ToDo 
+//create new field in department that show number of emps in this department 
+//if number of emps > 3 -> color it with red else color it with green
+
+//Search
+//Cascade relationShip

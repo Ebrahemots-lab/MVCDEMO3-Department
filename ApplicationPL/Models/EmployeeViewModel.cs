@@ -19,7 +19,7 @@ namespace ApplicationPL.Models
         [MaxLength(50, ErrorMessage = "Length Should Not larger than 50 charcter")]
         //[UniqueCode(ErrorMessage = "Name Must Be Unique")]
         //[UniqueCode(ErrorMessage = "Name Must Contains Route")]
-        [Remote(action: "UniqueName" , controller:"Employee",ErrorMessage ="Name Must Contain Route")]
+        //[Remote(action: "UniqueName" , controller:"Employee",ErrorMessage ="Name Must Contain Route")]
         //[UniqueCode(ErrorMessage = "Name Must Contains Route")]
         public string Name { get; set; }
 

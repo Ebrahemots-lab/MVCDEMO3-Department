@@ -19,12 +19,14 @@ namespace ApplicationBLL.Repositories
         {
             if (typeof(T) == typeof(Employee))
             {
-                return (IEnumerable<T>) _context.employees.Include(E => E.Department).ToList();
+                return (IEnumerable<T>) _context.employees.Include(E => E.Department).AsNoTracking().ToList();
             }
-            else 
+            else if(typeof(T) == typeof(Department))
             {
-              return _context.Set<T>().ToList();
+                return (IEnumerable<T>) _context.departments.Include(D => D.Employees).AsNoTracking().ToList();
             }
+
+            return _context.Set<T>().ToList();
         }
 
         public T Get(int id)
@@ -41,7 +43,7 @@ namespace ApplicationBLL.Repositories
         public int Update(T item)
         {
             _context.Update(item);
-            return _context.SaveChanges();  
+            return Save();  
         }
 
         public int Delete(T item)

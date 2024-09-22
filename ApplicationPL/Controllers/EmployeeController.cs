@@ -90,9 +90,14 @@ namespace ApplicationPL.Controllers
 
             var deptsInfo = _unit.DepartmentRepository.ShowAll();
 
-        
 
             ViewBag.Depts = new SelectList(_unit.DepartmentRepository.ShowAll(),"Id","Name");
+
+
+            //Send session Informations 
+            HttpContext.Session.SetString("Name", mappedEmp.Name);
+            HttpContext.Session.SetInt32("Age", mappedEmp.Age);
+
 
             return View(mappedEmp);
         }
@@ -109,7 +114,7 @@ namespace ApplicationPL.Controllers
             
 
                 _unit.EmployeeRepository.Update(mappedEmp);
-                _unit.EmployeeRepository.Save();
+
 
                 return RedirectToAction("Index");
             }
@@ -159,7 +164,18 @@ namespace ApplicationPL.Controllers
             }
 
             
-        } 
+        }
+
+
+        public IActionResult Test() 
+        {
+            //Catch session 
+
+            string userName = HttpContext.Session.GetString("Name");
+            int? userAge = HttpContext.Session.GetInt32("Age");
+
+            return Content($"Name: {userName} - Age: {userAge}");
+        }
     }
 }
  

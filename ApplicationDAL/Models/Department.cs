@@ -12,15 +12,14 @@ namespace ApplicationDAL.Models
 
         public int Id { get; set; }
 
-        //Front End Validation to ensure that code is enterd
-        [Required(ErrorMessage ="Code Is Required")]    
+       
+        [Required]    
         public string Code { get; set; }
      
-        [Required(ErrorMessage = "Name Is Required")]
-        [MaxLength(25) , MinLength(2)]
+        [Required]
         public string Name { get; set; }
      
-        [DisplayName("Date Of Creation")] // Display name for front
+        [DisplayName] 
         public DateTime? DateOfCreation { get; set; }
 
         //RelationShip

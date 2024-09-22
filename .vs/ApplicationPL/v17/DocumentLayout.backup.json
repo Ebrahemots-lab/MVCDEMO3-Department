@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|d:\\diploma\\diploma\\mvcdemo3-department\\applicationpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|solutionrelative:applicationpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|d:\\diploma\\diploma\\mvcdemo3-department\\applicationpl\\models\\departmentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|solutionrelative:applicationpl\\models\\departmentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{756D4D4F-7CF6-4003-A5B8-5B022B7197F3}|ApplicationBLL\\ApplicationBLL.csproj|d:\\diploma\\diploma\\mvcdemo3-department\\applicationbll\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{756D4D4F-7CF6-4003-A5B8-5B022B7197F3}|ApplicationBLL\\ApplicationBLL.csproj|solutionrelative:applicationbll\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|d:\\diploma\\diploma\\mvcdemo3-department\\applicationpl\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|solutionrelative:applicationpl\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|d:\\diploma\\diploma\\mvcdemo3-department\\applicationpl\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|solutionrelative:applicationpl\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,34 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Program.cs",
-              "RelativeDocumentMoniker": "ApplicationPL\\Program.cs",
-              "ToolTip": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Program.cs",
-              "RelativeToolTip": "ApplicationPL\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T19:18:31.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DepartmentController.cs",
-              "DocumentMoniker": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Controllers\\DepartmentController.cs",
-              "RelativeDocumentMoniker": "ApplicationPL\\Controllers\\DepartmentController.cs",
-              "ToolTip": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Controllers\\DepartmentController.cs",
-              "RelativeToolTip": "ApplicationPL\\Controllers\\DepartmentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T19:15:55.414Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -69,14 +43,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationBLL\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "ApplicationBLL\\Repositories\\GenericRepository.cs",
+              "ToolTip": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationBLL\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "ApplicationBLL\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T03:19:03.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "ApplicationPL\\Controllers\\EmployeeController.cs",
               "ToolTip": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "ApplicationPL\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH8AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAHQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T19:12:54.775Z",
+              "WhenOpened": "2024-09-22T03:04:28.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DepartmentViewModel.cs",
+              "DocumentMoniker": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Models\\DepartmentViewModel.cs",
+              "RelativeDocumentMoniker": "ApplicationPL\\Models\\DepartmentViewModel.cs",
+              "ToolTip": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Models\\DepartmentViewModel.cs",
+              "RelativeToolTip": "ApplicationPL\\Models\\DepartmentViewModel.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T02:04:38.062Z",
               "EditorCaption": ""
             }
           ]
