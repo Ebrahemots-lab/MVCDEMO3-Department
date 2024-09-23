@@ -30,7 +30,6 @@ namespace ApplicationDAL.Models
 
         public string? Img { get; set; }
 
-
         public DateTime HireDate { get; set; } = DateTime.Now;
 
         public DateTime CreationDate { get; set; } = DateTime.Now;

@@ -37,8 +37,9 @@ namespace ApplicationPL.Models
 
         public string? Phone { get; set; }
 
-        public string? Img { get; set; }
+        public IFormFile Image { get; set; }
 
+        public string? Img { get; set; }
 
         [Display(Name = "Hiring Date")]
         [Column(TypeName = "datetime")]

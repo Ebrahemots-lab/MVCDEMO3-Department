@@ -32,7 +32,7 @@
                 <td>@Html.DisplayNameFor(E => E.IsActive)</td>
                 <td>@Html.DisplayNameFor(E => E.HireDate)</td>
                 <td>@Html.DisplayNameFor(E => E.DepartmentId)</td>
-                <td>@Html.DisplayNameFor(E => E.Img)</td>
+                <td>@Html.DisplayNameFor(E => E.Image)</td>
                 <td>Details</td>
                 <td>Update</td>
                 <td>Delete</td>
@@ -59,7 +59,7 @@
                     </td>
                     <td>@emp.HireDate</td>
                     <td>@emp.Department.Name</td>
-                    <td><img src="/imgs/@emp.Img"style="width:30px" /></td>
+                    <td><img src="/Files/imgs/@emp.Img"style="width:30px" /></td>
                     <partial name="_ButtonPartial" model="@emp.Id" />
                 </tr>
             }

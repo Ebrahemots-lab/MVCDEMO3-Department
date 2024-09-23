@@ -181,6 +181,14 @@
       "PackagePath": "staticwebassets\\ApplicationPL.bundle.scp.css"
     },
     {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\Files\\imgs\\1ea43d15-3619-4cd6-8f57-52d0bc0d1050images.png",
+      "PackagePath": "staticwebassets\\Files\\imgs\\1ea43d15-3619-4cd6-8f57-52d0bc0d1050images.png"
+    },
+    {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\Files\\imgs\\d98722a5-446c-4b4e-848c-325c3ea2f627images.png",
+      "PackagePath": "staticwebassets\\Files\\imgs\\d98722a5-446c-4b4e-848c-325c3ea2f627images.png"
+    },
+    {
       "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

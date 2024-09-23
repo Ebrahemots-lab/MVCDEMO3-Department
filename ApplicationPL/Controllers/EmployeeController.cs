@@ -1,5 +1,6 @@
 ﻿using ApplicationBLL.Interfaces;
 using ApplicationDAL.Models;
+using ApplicationPL.Helpers;
 using ApplicationPL.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
@@ -151,6 +152,9 @@ namespace ApplicationPL.Controllers
 
             if (ModelState.IsValid) 
             {
+
+                string fileName = DocumentHelper.Upload(EmpVm.Image , "imgs");
+                EmpVm.Img = fileName;
                 Employee mappedEmp = _mapper.Map<EmployeeViewModel, Employee>(EmpVm);
 
                 _unit.EmployeeRepository.Add(mappedEmp);
