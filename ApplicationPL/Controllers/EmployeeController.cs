@@ -108,8 +108,25 @@ namespace ApplicationPL.Controllers
         {
             ViewBag.Depts = new SelectList(_unit.DepartmentRepository.ShowAll(), "Id", "Name");
 
+
+            //Get Img name from Database Based on Emp 
+            //string oldImgName = _unit.EmployeeRepository.Get(empVM.Id)();
+
+
             if (ModelState.IsValid) 
             {
+
+                //Delete old image
+                if(empVM.Image != null) 
+                {
+
+                //DocumentHelper.Delete(oldImgName, "Imgs");
+
+                string newFileName = DocumentHelper.Upload(empVM.Image,"Imgs");
+
+                empVM.Img = newFileName;
+                }
+                //Upload new Image
 
                 Employee mappedEmp = _mapper.Map<EmployeeViewModel, Employee>(empVM);
             
@@ -129,9 +146,14 @@ namespace ApplicationPL.Controllers
 
             if(emp != null) 
             {
-                _unit.EmployeeRepository.Delete(emp);
+                int statusNumber = _unit.EmployeeRepository.Delete(emp);
 
-                _unit.EmployeeRepository.Save();
+                  _unit.Save();
+
+                if(statusNumber > 0 && emp.Img != null) 
+                {
+                    DocumentHelper.Delete(emp.Img,"Imgs");
+                }
 
                 return RedirectToAction("Index");
             }
@@ -158,7 +180,7 @@ namespace ApplicationPL.Controllers
                 Employee mappedEmp = _mapper.Map<EmployeeViewModel, Employee>(EmpVm);
 
                 _unit.EmployeeRepository.Add(mappedEmp);
-                _unit.EmployeeRepository.Save();      
+                _unit.Save();      
                 return RedirectToAction("Index");
             }
             else 

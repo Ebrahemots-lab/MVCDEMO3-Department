@@ -18,5 +18,18 @@
             return fileName;
         }
 
+        //Delete File
+        public static void Delete(string fileName , string folderName) 
+        {
+            //get the path of the file name first then check if it's exicted or not 
+            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\Files", folderName, fileName);
+
+            if (File.Exists(filePath)) 
+            {
+                File.Delete(filePath);
+            }
+        }
+
+
     }
 }

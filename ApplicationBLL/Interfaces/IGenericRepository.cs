@@ -20,8 +20,5 @@ namespace ApplicationBLL.Interfaces
 
         int Delete(T item);
 
-        int Save();
-
-
     }
 }

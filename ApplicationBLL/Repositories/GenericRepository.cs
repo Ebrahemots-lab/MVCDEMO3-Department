@@ -31,7 +31,7 @@ namespace ApplicationBLL.Repositories
 
         public T Get(int id)
         {
-            return _context.Set<T>().Find(id);
+            return _context.Set<T>().AsNoTracking().Find(id);
         }
 
         public int Add(T item)
@@ -43,19 +43,16 @@ namespace ApplicationBLL.Repositories
         public int Update(T item)
         {
             _context.Update(item);
-            return Save();  
+            return _context.SaveChanges();  
         }
 
         public int Delete(T item)
         {
-            _context.Set<T>().Remove(item); 
+            _context.Set<T>().Remove(item);
+
             return _context.SaveChanges();
-
         }
 
-        public int Save()
-        {
-           return _context.SaveChanges();
-        }
+       
     }
 }

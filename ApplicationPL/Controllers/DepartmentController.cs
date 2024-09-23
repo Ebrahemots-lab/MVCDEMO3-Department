@@ -89,15 +89,19 @@ namespace ApplicationPL.Controllers
         {
             Department returnedDept = _unitOfWork.DepartmentRepository.Get(id);
 
+            
+           
             if (returnedDept != null)
             {
                 if (ModelState.IsValid)
                 {
+
                     returnedDept.Code = dept.Code;
                     returnedDept.Name = dept.Name;
                     returnedDept.DateOfCreation = dept.DateOfCreation;
-                    _unitOfWork.DepartmentRepository.Save();
-                    
+
+                    _unitOfWork.Save();
+
                     return RedirectToAction("Index");
 
                 }

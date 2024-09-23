@@ -27,5 +27,10 @@ namespace ApplicationBLL.Repositories
         public IDepartmentRepository DepartmentRepository =>  _department;
 
         public IEmployeeRepository EmployeeRepository => _empRepo;
+
+        public int Save()
+        {
+            return _contex.SaveChanges();
+        }
     }
 }

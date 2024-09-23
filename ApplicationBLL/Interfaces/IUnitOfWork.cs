@@ -14,5 +14,7 @@ namespace ApplicationBLL.Interfaces
         public IDepartmentRepository DepartmentRepository { get; }
 
         public IEmployeeRepository EmployeeRepository { get; }
+
+        int Save();
     }
 }
