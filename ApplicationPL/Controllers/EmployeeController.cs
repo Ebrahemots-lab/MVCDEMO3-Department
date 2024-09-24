@@ -109,8 +109,8 @@ namespace ApplicationPL.Controllers
             ViewBag.Depts = new SelectList(_unit.DepartmentRepository.ShowAll(), "Id", "Name");
 
 
-            //Get Img name from Database Based on Emp 
-            //string oldImgName = _unit.EmployeeRepository.Get(empVM.Id)();
+            //Get Img name from Database Based on Emp
+            string oldImgName = _unit.EmployeeRepository.Get(empVM.Id).Img;
 
 
             if (ModelState.IsValid) 
@@ -120,7 +120,7 @@ namespace ApplicationPL.Controllers
                 if(empVM.Image != null) 
                 {
 
-                //DocumentHelper.Delete(oldImgName, "Imgs");
+                DocumentHelper.Delete(oldImgName, "Imgs");
 
                 string newFileName = DocumentHelper.Upload(empVM.Image,"Imgs");
 
@@ -129,7 +129,7 @@ namespace ApplicationPL.Controllers
                 //Upload new Image
 
                 Employee mappedEmp = _mapper.Map<EmployeeViewModel, Employee>(empVM);
-            
+                
 
                 _unit.EmployeeRepository.Update(mappedEmp);
 

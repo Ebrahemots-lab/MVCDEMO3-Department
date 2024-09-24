@@ -31,8 +31,18 @@ namespace ApplicationBLL.Repositories
 
         public T Get(int id)
         {
-            return _context.Set<T>().AsNoTracking().Find(id);
+           if(typeof(T) == typeof(Employee)) 
+            {
+                return  _context.employees.AsNoTracking().FirstOrDefault(D => D.Id == id) as T;
+            }
+            else 
+            {
+                return _context.Set<T>().Find(id);
+            }
+
         }
+
+
 
         public int Add(T item)
         {

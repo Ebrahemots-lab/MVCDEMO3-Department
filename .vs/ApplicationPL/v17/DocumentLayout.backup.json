@@ -7,20 +7,12 @@
       "RelativeMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|solutionrelative:applicationpl\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|d:\\diploma\\diploma\\mvcdemo3-department\\applicationpl\\helpers\\documenthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|solutionrelative:applicationpl\\helpers\\documenthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|d:\\diploma\\diploma\\mvcdemo3-department\\applicationpl\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|solutionrelative:applicationpl\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|d:\\diploma\\diploma\\mvcdemo3-department\\applicationpl\\views\\employee\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|solutionrelative:applicationpl\\views\\employee\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|d:\\diploma\\diploma\\mvcdemo3-department\\applicationpl\\views\\employee\\partialviews\\addupdatepartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|solutionrelative:applicationpl\\views\\employee\\partialviews\\addupdatepartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|d:\\diploma\\diploma\\mvcdemo3-department\\applicationpl\\views\\employee\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|solutionrelative:applicationpl\\views\\employee\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,66 +42,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "ApplicationPL\\Controllers\\EmployeeController.cs",
-              "ToolTip": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "ApplicationPL\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAHoAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T13:15:15.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DepartmentController.cs",
-              "DocumentMoniker": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Controllers\\DepartmentController.cs",
-              "RelativeDocumentMoniker": "ApplicationPL\\Controllers\\DepartmentController.cs",
-              "ToolTip": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Controllers\\DepartmentController.cs",
-              "RelativeToolTip": "ApplicationPL\\Controllers\\DepartmentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T13:15:12.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DocumentHelper.cs",
-              "DocumentMoniker": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Helpers\\DocumentHelper.cs",
-              "RelativeDocumentMoniker": "ApplicationPL\\Helpers\\DocumentHelper.cs",
-              "ToolTip": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Helpers\\DocumentHelper.cs",
-              "RelativeToolTip": "ApplicationPL\\Helpers\\DocumentHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T12:50:45.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Views\\Employee\\Add.cshtml",
-              "RelativeDocumentMoniker": "ApplicationPL\\Views\\Employee\\Add.cshtml",
-              "ToolTip": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Views\\Employee\\Add.cshtml",
-              "RelativeToolTip": "ApplicationPL\\Views\\Employee\\Add.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-23T11:34:58.306Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "AddUpdatePartialView.cshtml",
               "DocumentMoniker": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Views\\Employee\\PartialViews\\AddUpdatePartialView.cshtml",
               "RelativeDocumentMoniker": "ApplicationPL\\Views\\Employee\\PartialViews\\AddUpdatePartialView.cshtml",
               "ToolTip": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Views\\Employee\\PartialViews\\AddUpdatePartialView.cshtml",
               "RelativeToolTip": "ApplicationPL\\Views\\Employee\\PartialViews\\AddUpdatePartialView.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-23T11:35:10.126Z"
+              "WhenOpened": "2024-09-24T11:40:57.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Views\\Employee\\Update.cshtml",
+              "RelativeDocumentMoniker": "ApplicationPL\\Views\\Employee\\Update.cshtml",
+              "ToolTip": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Views\\Employee\\Update.cshtml",
+              "RelativeToolTip": "ApplicationPL\\Views\\Employee\\Update.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T11:22:32.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "ApplicationPL\\Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Controllers\\EmployeeController.cs*",
+              "RelativeToolTip": "ApplicationPL\\Controllers\\EmployeeController.cs*",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAIwIMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T11:19:30.432Z",
+              "EditorCaption": ""
             }
           ]
         }

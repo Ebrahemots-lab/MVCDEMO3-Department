@@ -37,7 +37,7 @@ namespace ApplicationPL.Models
 
         public string? Phone { get; set; }
 
-        public IFormFile Image { get; set; }
+        public IFormFile? Image { get; set; }
 
         public string? Img { get; set; }
 
