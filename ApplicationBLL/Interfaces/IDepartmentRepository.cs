@@ -6,6 +6,6 @@ namespace ApplicationBLL.Interfaces
     public interface IDepartmentRepository : IGenericRepository<Department>
     {
 
-        Department Find(string code);
+        Task<Department> FindAsync(string code);
     }
 }

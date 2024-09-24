@@ -18,11 +18,9 @@ namespace ApplicationBLL.Repositories
             _context = context; 
         }
 
-        public IEnumerable<Employee> SearchEmps(string name)
-        {
-            IEnumerable<Employee> searchedEmp = _context.employees.Where(emp => emp.Name.Contains(name)).Include(D => D.Department);
-
-            return searchedEmp;
-        }
+        public async Task<IEnumerable<Employee>> SearchEmpsAsync(string name)
+        => await _context.employees.Where(emp => emp.Name.Contains(name)).Include(D => D.Department).ToListAsync();
+ 
+        
     }
 }

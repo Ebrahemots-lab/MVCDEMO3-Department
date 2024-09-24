@@ -24,7 +24,7 @@ namespace ApplicationBLL.Validation
             {
                 string deptCode = (string)value;
 
-                Department dept = _DepartmentRepository.Find(deptCode);
+                Task<Department> dept = _DepartmentRepository.FindAsync(deptCode);
 
                 if (dept == null)
                 {

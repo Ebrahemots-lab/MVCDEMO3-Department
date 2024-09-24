@@ -9,6 +9,6 @@ namespace ApplicationBLL.Interfaces
 {
     public interface IEmployeeRepository : IGenericRepository<Employee>
     {
-        IEnumerable<Employee> SearchEmps(string name);
+        Task<IEnumerable<Employee>> SearchEmpsAsync(string name);
     }
 }

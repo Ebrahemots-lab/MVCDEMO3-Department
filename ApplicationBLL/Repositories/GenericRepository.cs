@@ -15,39 +15,37 @@ namespace ApplicationBLL.Repositories
         }
 
 
-        public IEnumerable<T> ShowAll()
+        public async Task<IEnumerable<T>> ShowAllAsync()
         {
             if (typeof(T) == typeof(Employee))
             {
-                return (IEnumerable<T>) _context.employees.Include(E => E.Department).AsNoTracking().ToList();
+                return (IEnumerable<T>) _context.employees.Include(E => E.Department).AsNoTracking().ToListAsync().Result;
             }
             else if(typeof(T) == typeof(Department))
             {
-                return (IEnumerable<T>) _context.departments.Include(D => D.Employees).AsNoTracking().ToList();
+                return (IEnumerable<T>)  _context.departments.Include(D => D.Employees).AsNoTracking().ToListAsync().Result;
             }
 
-            return _context.Set<T>().ToList();
+            return await _context.Set<T>().ToListAsync();
         }
 
-        public T Get(int id)
+        public async Task<T> GetAsync(int id)
         {
            if(typeof(T) == typeof(Employee)) 
             {
-                return  _context.employees.AsNoTracking().FirstOrDefault(D => D.Id == id) as T;
+                return await  _context.employees.AsNoTracking().FirstOrDefaultAsync(D => D.Id == id) as T;
             }
             else 
             {
-                return _context.Set<T>().Find(id);
+                return await _context.Set<T>().FindAsync(id);
             }
 
         }
 
-
-
-        public int Add(T item)
+        public async Task<int> AddAsync(T item)
         {
             _context.Add(item); //This will search for the DBSET OF T and add the item to it
-            return _context.SaveChanges();
+            return await _context.SaveChangesAsync();
         }
 
         public int Update(T item)

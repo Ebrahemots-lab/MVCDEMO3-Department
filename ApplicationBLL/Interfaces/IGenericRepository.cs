@@ -10,11 +10,11 @@ namespace ApplicationBLL.Interfaces
     {
         //this Generic interface will hold the blueprint for all Intefaces that will Inherit from iut
 
-        IEnumerable<T> ShowAll();
+        Task<IEnumerable<T>> ShowAllAsync();
 
-        T Get(int id);
+        Task<T> GetAsync(int id);
 
-        int Add(T item);
+        Task<int> AddAsync(T item);
 
         int Update(T item);
 

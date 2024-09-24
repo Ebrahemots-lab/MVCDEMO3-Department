@@ -5,8 +5,6 @@ using ApplicationPL.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.AspNetCore.Mvc.Routing;
-using System.Collections.Generic;
 
 namespace ApplicationPL.Controllers
 {
@@ -35,9 +33,9 @@ namespace ApplicationPL.Controllers
             }
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            IEnumerable<Employee> list = _unit.EmployeeRepository.ShowAll();
+            IEnumerable<Employee> list = await _unit.EmployeeRepository.ShowAllAsync();
 
             IEnumerable<EmployeeViewModel> mappedEmps = _mapper.Map<IEnumerable<Employee>,IEnumerable<EmployeeViewModel>>(list);
 
@@ -45,7 +43,7 @@ namespace ApplicationPL.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(string searchedName)
+        public async Task<IActionResult>  Index(string searchedName)
         {
 
             //Searching Task
@@ -56,7 +54,7 @@ namespace ApplicationPL.Controllers
             //Check for null 
             if (string.IsNullOrEmpty(searchedName)) 
             {
-                IEnumerable<Employee> list = _unit.EmployeeRepository.ShowAll();
+                IEnumerable<Employee> list = await _unit.EmployeeRepository.ShowAllAsync();
 
                 IEnumerable<EmployeeViewModel> mappedEmps = _mapper.Map<IEnumerable<Employee>, IEnumerable<EmployeeViewModel>>(list);
 
@@ -64,7 +62,7 @@ namespace ApplicationPL.Controllers
             }
             else 
             {
-                IEnumerable<Employee> searchedEmps = _unit.EmployeeRepository.SearchEmps(searchedName);
+                IEnumerable<Employee> searchedEmps = await _unit.EmployeeRepository.SearchEmpsAsync(searchedName);
 
                 IEnumerable<EmployeeViewModel> mappedEmps = _mapper.Map<IEnumerable<Employee>, IEnumerable<EmployeeViewModel>>(searchedEmps);
 
@@ -73,26 +71,26 @@ namespace ApplicationPL.Controllers
         }
         
 
-        public IActionResult Details(int id) 
+        public async Task<IActionResult>  Details(int id) 
         {
-            Employee emp = _unit.EmployeeRepository.Get(id);
+            Employee emp = await _unit.EmployeeRepository.GetAsync(id);
 
             EmployeeViewModel mappedEmp = _mapper.Map<Employee, EmployeeViewModel>(emp);
 
             return View(mappedEmp);
         }
 
-        public IActionResult Update(int id) 
+        public async Task<IActionResult> Update(int id) 
         {
             //Get the Employee That we pressed on 
-            Employee emp = _unit.EmployeeRepository.Get(id);
+            Employee emp = await _unit.EmployeeRepository.GetAsync(id);
 
             EmployeeViewModel mappedEmp = _mapper.Map<Employee, EmployeeViewModel>(emp);
 
-            var deptsInfo = _unit.DepartmentRepository.ShowAll();
+            var deptsInfo = _unit.DepartmentRepository.ShowAllAsync();
 
 
-            ViewBag.Depts = new SelectList(_unit.DepartmentRepository.ShowAll(),"Id","Name");
+            ViewBag.Depts = new SelectList(await _unit.DepartmentRepository.ShowAllAsync(),"Id","Name");
 
 
             //Send session Informations 
@@ -104,15 +102,16 @@ namespace ApplicationPL.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit([FromRoute] int id,EmployeeViewModel empVM) 
+        public async Task<IActionResult>  Edit([FromRoute] int id,EmployeeViewModel empVM) 
         {
-            ViewBag.Depts = new SelectList(_unit.DepartmentRepository.ShowAll(), "Id", "Name");
+            ViewBag.Depts = new SelectList(_unit.DepartmentRepository.ShowAllAsync().Result, "Id", "Name");
 
 
             //Get Img name from Database Based on Emp
-            string oldImgName = _unit.EmployeeRepository.Get(empVM.Id).Img;
+            Employee Emp =await _unit.EmployeeRepository.GetAsync(empVM.Id);
+            string oldImgName = Emp.Img;
 
-
+          
             if (ModelState.IsValid) 
             {
 
@@ -138,11 +137,11 @@ namespace ApplicationPL.Controllers
             }
 
             return View("Update",empVM);
-        }
+         }
 
-        public IActionResult Delete(int id) 
+        public async Task<IActionResult> Delete(int id) 
         {
-            Employee emp = _unit.EmployeeRepository.Get(id);
+            Employee emp = await _unit.EmployeeRepository.GetAsync(id);
 
             if(emp != null) 
             {
@@ -162,24 +161,28 @@ namespace ApplicationPL.Controllers
             
         }
 
-        public IActionResult Add() 
+        public async Task<IActionResult> Add() 
         {
-            ViewBag.Depts = new SelectList(_unit.DepartmentRepository.ShowAll(), "Id", "Name");
+            ViewBag.Depts = new SelectList(_unit.DepartmentRepository.ShowAllAsync().Result, "Id", "Name");
             return View();
         }
 
         [HttpPost]
-        public IActionResult Add(EmployeeViewModel EmpVm) 
+        public async Task<IActionResult> Add(EmployeeViewModel EmpVm) 
         {
 
             if (ModelState.IsValid) 
             {
 
-                string fileName = DocumentHelper.Upload(EmpVm.Image , "imgs");
-                EmpVm.Img = fileName;
+               if(EmpVm.Image != null) 
+                {
+                    string fileName = DocumentHelper.Upload(EmpVm.Image, "imgs");
+                    EmpVm.Img = fileName;
+                }
+
                 Employee mappedEmp = _mapper.Map<EmployeeViewModel, Employee>(EmpVm);
 
-                _unit.EmployeeRepository.Add(mappedEmp);
+                await _unit.EmployeeRepository.AddAsync(mappedEmp);
                 _unit.Save();      
                 return RedirectToAction("Index");
             }

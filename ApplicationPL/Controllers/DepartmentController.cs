@@ -20,11 +20,11 @@ namespace ApplicationPL.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
 
             //Get all Department
-            IEnumerable<Department> models = _unitOfWork.DepartmentRepository.ShowAll();
+            IEnumerable<Department> models = await _unitOfWork.DepartmentRepository.ShowAllAsync();
 
             //Convert it to Ienumrable of DepartmentViewModel
             IEnumerable<DepartmentViewModel> depts = _mapper.Map<IEnumerable<Department>, IEnumerable<DepartmentViewModel>>(models);
@@ -40,13 +40,13 @@ namespace ApplicationPL.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Department dept)
+        public async Task<IActionResult> Create(Department dept)
         {
             //Check if the Model is not Null
 
             if (ModelState.IsValid)
             {
-                int resultNumber = _unitOfWork.DepartmentRepository.Add(dept);
+                var resultNumber = await _unitOfWork.DepartmentRepository.AddAsync(dept);
                 if (resultNumber > 0)
                 {
                     return RedirectToAction("Index");
@@ -56,7 +56,7 @@ namespace ApplicationPL.Controllers
             return View(dept);
         }
 
-        public IActionResult Details(int? id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id is null)
             {
@@ -64,7 +64,7 @@ namespace ApplicationPL.Controllers
             }
             else
             {
-                Department dept = _unitOfWork.DepartmentRepository.Get(id.Value);
+                Department dept = await _unitOfWork.DepartmentRepository.GetAsync(id.Value);
 
                 if (dept is null) return NotFound();
 
@@ -73,21 +73,21 @@ namespace ApplicationPL.Controllers
         }
 
         [HttpGet]
-        public IActionResult Update(int? id)
+        public async Task<IActionResult>  Update(int? id)
         {
             if (id is null)
             {
                 return BadRequest();
             }
-            Department dept = _unitOfWork.DepartmentRepository.Get(id.Value);
+            Department dept = await _unitOfWork.DepartmentRepository.GetAsync(id.Value);
             return View(model: dept);
         }
 
        
-        public IActionResult Edit(int id, Department dept)
+        public async Task<IActionResult> Edit(int id, Department dept)
 
         {
-            Department returnedDept = _unitOfWork.DepartmentRepository.Get(id);
+            Department returnedDept = await _unitOfWork.DepartmentRepository.GetAsync(id);
 
             
            
@@ -111,9 +111,9 @@ namespace ApplicationPL.Controllers
     
         }
 
-        public IActionResult Delete(int id) 
+        public async Task<IActionResult> Delete(int id) 
         {
-           Department dept = _unitOfWork.DepartmentRepository.Get(id);
+           Department dept = await _unitOfWork.DepartmentRepository.GetAsync(id);
             _unitOfWork.DepartmentRepository.Delete(dept);
             return RedirectToAction("Index");
         }

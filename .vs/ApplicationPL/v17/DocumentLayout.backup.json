@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|d:\\diploma\\diploma\\mvcdemo3-department\\applicationpl\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|solutionrelative:applicationpl\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|d:\\diploma\\diploma\\mvcdemo3-department\\applicationpl\\views\\employee\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|solutionrelative:applicationpl\\views\\employee\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|d:\\diploma\\diploma\\mvcdemo3-department\\applicationpl\\views\\employee\\partialviews\\addupdatepartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C91C61EA-9FE0-4FF9-B931-BE49B69F585F}|ApplicationPL\\ApplicationPL.csproj|solutionrelative:applicationpl\\views\\employee\\partialviews\\addupdatepartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{756D4D4F-7CF6-4003-A5B8-5B022B7197F3}|ApplicationBLL\\ApplicationBLL.csproj|d:\\diploma\\diploma\\mvcdemo3-department\\applicationbll\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{756D4D4F-7CF6-4003-A5B8-5B022B7197F3}|ApplicationBLL\\ApplicationBLL.csproj|solutionrelative:applicationbll\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,15 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationBLL\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "ApplicationBLL\\Repositories\\GenericRepository.cs",
+              "ToolTip": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationBLL\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "ApplicationBLL\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T14:27:29.634Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Bookmark",
@@ -39,45 +40,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddUpdatePartialView.cshtml",
-              "DocumentMoniker": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Views\\Employee\\PartialViews\\AddUpdatePartialView.cshtml",
-              "RelativeDocumentMoniker": "ApplicationPL\\Views\\Employee\\PartialViews\\AddUpdatePartialView.cshtml",
-              "ToolTip": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Views\\Employee\\PartialViews\\AddUpdatePartialView.cshtml",
-              "RelativeToolTip": "ApplicationPL\\Views\\Employee\\PartialViews\\AddUpdatePartialView.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T11:40:57.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Views\\Employee\\Update.cshtml",
-              "RelativeDocumentMoniker": "ApplicationPL\\Views\\Employee\\Update.cshtml",
-              "ToolTip": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Views\\Employee\\Update.cshtml",
-              "RelativeToolTip": "ApplicationPL\\Views\\Employee\\Update.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T11:22:32.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "ApplicationPL\\Controllers\\EmployeeController.cs",
-              "ToolTip": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\Controllers\\EmployeeController.cs*",
-              "RelativeToolTip": "ApplicationPL\\Controllers\\EmployeeController.cs*",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAIwIMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T11:19:30.432Z",
-              "EditorCaption": ""
             }
           ]
         }

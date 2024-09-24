@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Jzo3mu8X+LyduufH1rdjyAnG+oiMNHCZKMFNGL7+b6g=",
+  "Hash": "cwRimJGpwsi9pGhPscOGqCiD4pKD/hZ/xieRdBO2TOA=",
   "Source": "ApplicationPL",
   "BasePath": "_content/ApplicationPL",
   "Mode": "Default",
@@ -948,6 +948,25 @@
       "OriginalItemSpec": "wwwroot\\Files\\imgs\\07720317-3f05-4e9e-a69e-8f21a7492b36images.png"
     },
     {
+      "Identity": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\Files\\imgs\\5fb9f9c7-5a1a-4ce2-8461-a48c7bf181f3Hospital.drawio.png",
+      "SourceId": "ApplicationPL",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\",
+      "BasePath": "_content/ApplicationPL",
+      "RelativePath": "Files/imgs/5fb9f9c7-5a1a-4ce2-8461-a48c7bf181f3Hospital.drawio.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\imgs\\5fb9f9c7-5a1a-4ce2-8461-a48c7bf181f3Hospital.drawio.png"
+    },
+    {
       "Identity": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\Files\\imgs\\7bbc0f5e-8c4e-44f6-93c7-144f5fb895d7images.png",
       "SourceId": "ApplicationPL",
       "SourceType": "Discovered",
@@ -967,12 +986,12 @@
       "OriginalItemSpec": "wwwroot\\Files\\imgs\\7bbc0f5e-8c4e-44f6-93c7-144f5fb895d7images.png"
     },
     {
-      "Identity": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\Files\\imgs\\e640ad4d-5f84-4008-ba21-a5284037c646images.png",
+      "Identity": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\Files\\imgs\\87ce7bd4-0e05-4ef3-82d7-f309e2aff8b3musician.drawio.png",
       "SourceId": "ApplicationPL",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\",
       "BasePath": "_content/ApplicationPL",
-      "RelativePath": "Files/imgs/e640ad4d-5f84-4008-ba21-a5284037c646images.png",
+      "RelativePath": "Files/imgs/87ce7bd4-0e05-4ef3-82d7-f309e2aff8b3musician.drawio.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -983,7 +1002,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Files\\imgs\\e640ad4d-5f84-4008-ba21-a5284037c646images.png"
+      "OriginalItemSpec": "wwwroot\\Files\\imgs\\87ce7bd4-0e05-4ef3-82d7-f309e2aff8b3musician.drawio.png"
     },
     {
       "Identity": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\Files\\imgs\\fd4b1e34-fda9-4d36-bf57-7ee8d0dc9232images.png",

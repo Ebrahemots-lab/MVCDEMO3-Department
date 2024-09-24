@@ -1,6 +1,7 @@
 ﻿using ApplicationBLL.Interfaces;
 using ApplicationDAL.Data.Context;
 using ApplicationDAL.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApplicationBLL.Repositories
 {
@@ -13,9 +14,9 @@ namespace ApplicationBLL.Repositories
             _context = context;
         }
 
-        public Department Find(string code)
+        public  async Task<Department> FindAsync(string code)
         {
-            return _context.departments.Where(D => D.Name == code).FirstOrDefault();
+            return await _context.departments.Where(D => D.Name == code).FirstOrDefaultAsync();
         }
     }
 }
