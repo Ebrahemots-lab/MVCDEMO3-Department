@@ -513,3 +513,9 @@ D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\obj\Debug\net8.0\Applicatio
 D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\obj\Debug\net8.0\ref\ApplicationPL.dll
 D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\bin\Debug\net8.0\AutoMapper.dll
 D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationPL\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

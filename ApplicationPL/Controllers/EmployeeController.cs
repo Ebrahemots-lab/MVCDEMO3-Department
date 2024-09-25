@@ -3,11 +3,13 @@ using ApplicationDAL.Models;
 using ApplicationPL.Helpers;
 using ApplicationPL.Models;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace ApplicationPL.Controllers
 {
+    [Authorize]
     public class EmployeeController : Controller
     {
 

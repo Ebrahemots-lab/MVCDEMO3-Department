@@ -205,6 +205,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cwRimJGpwsi9pGhPscOGqCiD4pKD/hZ/xieRdBO2TOA=",
+  "Hash": "Ka6NNUoHXOC1MJYYjQeZSY0f4bfiogDX4j/gf4pjd3g=",
   "Source": "ApplicationPL",
   "BasePath": "_content/ApplicationPL",
   "Mode": "Default",
@@ -908,6 +908,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\css\\style.css",
+      "SourceId": "ApplicationPL",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\",
+      "BasePath": "_content/ApplicationPL",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "D:\\Diploma\\Diploma\\MVCDEMO3-Department\\ApplicationPL\\wwwroot\\favicon.ico",

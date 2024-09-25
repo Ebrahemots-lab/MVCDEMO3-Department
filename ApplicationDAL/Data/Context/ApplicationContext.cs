@@ -1,9 +1,10 @@
 ﻿using ApplicationDAL.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApplicationDAL.Data.Context
 {
-    public class ApplicationContext : DbContext
+    public class ApplicationContext : IdentityDbContext<ApplicationUser>
     {
       
         public ApplicationContext(DbContextOptions options) : base(options)
@@ -19,6 +20,7 @@ namespace ApplicationDAL.Data.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(System.Reflection.Assembly.GetExecutingAssembly());
+            base.OnModelCreating(modelBuilder);  
         }
 
 

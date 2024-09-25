@@ -1,7 +1,10 @@
 using ApplicationBLL.Interfaces;
 using ApplicationBLL.Repositories;
 using ApplicationDAL.Data.Context;
+using ApplicationDAL.Models;
 using ApplicationPL.Controllers.MappingProfiles;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApplicationPL
@@ -28,7 +31,21 @@ namespace ApplicationPL
             builder.Services.AddAutoMapper(typeof(DepartmentProfile));
 
             builder.Services.AddSession(option => option.IdleTimeout = TimeSpan.FromMinutes(30));
-         
+
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>(action => action.Password.RequireDigit = true).
+                AddEntityFrameworkStores<ApplicationContext>()
+                .AddDefaultTokenProviders(); // added class that have method to generate tokens
+
+
+
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+            {
+                options.LoginPath = "Account/Login";
+                options.AccessDeniedPath = "Home/Error";
+            });
+
+           
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -40,17 +57,20 @@ namespace ApplicationPL
             }
 
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
             app.UseSession();
 
             app.UseRouting();
 
+            app.UseAuthentication();
+
             app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Account}/{action=Login}/{id?}");
 
             app.Run();
         }
