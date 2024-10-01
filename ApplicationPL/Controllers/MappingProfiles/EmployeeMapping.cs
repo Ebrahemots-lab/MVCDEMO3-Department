@@ -10,6 +10,7 @@ namespace ApplicationPL.Controllers.MappingProfiles
         {
             //Create Source and Distination 
             CreateMap<EmployeeViewModel , Employee>().ReverseMap();
+            CreateMap<ApplicationUser, UsersViewModel>().ReverseMap();
         }
     }
 }

@@ -5,15 +5,17 @@
     Layout = "~/Views/Shared/AuthLayout.cshtml";
 }
 
-<div asp-validation-summary="All"></div>
+
 
 <div class="main-agileinfo">
     <div class="agileits-top">
-        <form ASP-action="Login" method="post">
-            <input class="text" asp-for="Email" placeholder="Email">
-            <span asp-validation-for="Email" class="text-danger"></span>
 
-            <input class="text" asp-for="Password" placeholder="Password">
+        <br />
+        <form ASP-action="Login" method="post">
+            <input class="text" asp-for="Email" style="margin-bottom:12px">
+            <span asp-validation-for="Email" class="text-danger" ></span>
+
+            <input class="text" asp-for="Password" style="margin-bottom:12px">
             <span asp-validation-for="Password" class="text-danger"></span>
 
             <div class="wthree-text">
@@ -23,8 +25,11 @@
                 </label>
                 <div class="clear"> </div>
             </div>
-            <input type="submit" value="SIGNUP">
-            <a>Don't Have an Account? <a asp-action="Index">Sign Up</a></a>
+            <input type="submit" value="SIGNIN">
+            <a>Don't Have an Account? <a asp-action="Index">SignUp</a>
+            <br />
+            <br />
+            <a>Forget Password?<a asp-action="ForgetPassword">Reset</a></a>
         </form>
     </div>
 </div>

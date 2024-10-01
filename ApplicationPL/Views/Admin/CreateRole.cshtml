@@ -1,0 +1,36 @@
+﻿@model ApplicationPL.Models.RoleViewModel
+
+@{
+    ViewData["Title"] = "CreateRole";
+    Layout = "~/Views/Shared/AuthLayout.cshtml";
+}
+
+<h1>CreateRole</h1>
+@if(ViewBag.sucess == true)
+{
+    <h3>Role has been added sucssesfuly</h3>
+}
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateRole">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Users">Back to List</a>
+</div>
+
+@section ValidationSection {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

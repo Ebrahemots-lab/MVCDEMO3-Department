@@ -1,0 +1,13 @@
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationDAL\bin\Release\net8.0\ApplicationDAL.deps.json
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationDAL\bin\Release\net8.0\ApplicationDAL.dll
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationDAL\bin\Release\net8.0\ApplicationDAL.pdb
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationDAL\obj\Release\net8.0\ApplicationDAL.csproj.AssemblyReference.cache
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationDAL\obj\Release\net8.0\ApplicationDAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationDAL\obj\Release\net8.0\ApplicationDAL.AssemblyInfoInputs.cache
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationDAL\obj\Release\net8.0\ApplicationDAL.AssemblyInfo.cs
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationDAL\obj\Release\net8.0\ApplicationDAL.csproj.CoreCompileInputs.cache
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationDAL\obj\Release\net8.0\ApplicationDAL.sourcelink.json
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationDAL\obj\Release\net8.0\ApplicationDAL.dll
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationDAL\obj\Release\net8.0\refint\ApplicationDAL.dll
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationDAL\obj\Release\net8.0\ApplicationDAL.pdb
+D:\Diploma\Diploma\MVCDEMO3-Department\ApplicationDAL\obj\Release\net8.0\ref\ApplicationDAL.dll

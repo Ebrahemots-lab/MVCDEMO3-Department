@@ -27,6 +27,7 @@ namespace ApplicationPL.Models
         [Compare("Password",ErrorMessage ="Password dosn't Match")]
         public string ConfirmPassword { get; set; }
 
+        [Required(ErrorMessage ="You Must agree")]
         public bool IsAgree { get; set; }
     }
 }

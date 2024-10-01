@@ -37,7 +37,6 @@ namespace ApplicationPL
                 .AddDefaultTokenProviders(); // added class that have method to generate tokens
 
 
-
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
             {
                 options.LoginPath = "Account/Login";

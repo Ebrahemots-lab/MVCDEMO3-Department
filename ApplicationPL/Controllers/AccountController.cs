@@ -1,8 +1,10 @@
 ﻿using ApplicationDAL.Models;
+using ApplicationPL.Helpers;
 using ApplicationPL.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Runtime.InteropServices;
 
 namespace ApplicationPL.Controllers
 {
@@ -28,7 +30,7 @@ namespace ApplicationPL.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid & model.IsAgree == true)
             {
                 var user = new ApplicationUser()
                 {
@@ -41,6 +43,8 @@ namespace ApplicationPL.Controllers
                 };
 
                 //Save it and validate it
+               await _user.AddToRoleAsync(user, "User");
+
                 var result = await _user.CreateAsync(user, model.Password);
 
                 if (result.Succeeded)
@@ -55,11 +59,11 @@ namespace ApplicationPL.Controllers
                     }
                 }
             }
-
+            ModelState.AddModelError("", "You Must Agree to the rules");
             return View("Index", model);
         }
 
-
+        [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
             //check if the modelstate is valid 
@@ -95,6 +99,93 @@ namespace ApplicationPL.Controllers
             }
             return View(model);
         }
+
+      
+        public IActionResult ForgetPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> SendForgetPasswordEmail(ForgetPasswordViewModel model) 
+        {
+            if (ModelState.IsValid) 
+            {
+                var user = await _user.FindByEmailAsync(model.Email);
+
+
+                if(user is not null) 
+                {
+
+
+                    //Generate token to reset password 
+                    var token = await _user.GeneratePasswordResetTokenAsync(user);
+
+                    //https:localhost/account/resetpassword?email=ebrahemots&token=
+                    var resetUrl = Url.Action("ResetPassword", "Account", new { email = user.Email, token }, Request.Scheme);
+
+
+                    //Send him the email adress contains link to reset password
+                    var mailToSend = new Email()
+                    {
+                        To = model.Email,
+                        Subject = "Reset Password",
+                        Body = resetUrl
+                    };
+                    EmailSetting.SendEmail(mailToSend);
+
+                    return Content("Your Password Reset link has been sent to your mail");
+                }
+            }
+
+            return View("ForgetPassword", model);
+        }
+
+        public IActionResult ResetPassword(string email, string token) 
+        {
+            TempData["email"] = email;
+            TempData["token"] = token;
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model) 
+        {
+            if (ModelState.IsValid) 
+            {
+                var email = TempData["email"] as string;
+                var token = TempData["token"] as string;
+               ApplicationUser user =  await _user.FindByEmailAsync(email);
+
+                if (user is not null) 
+                {
+                    if (user.Email == email)
+                    {
+                        IdentityResult result = await _user.ResetPasswordAsync(user, token, model.Password);
+                        if (result.Succeeded)
+                        {
+                            return RedirectToAction("Login");
+                        }
+                    }
+                }
+
+            }
+            return View();
+        }
+
+
+        public IActionResult AccessDenied() 
+        {
+            return Content("Your are not authorized");
+        }
+
+
+        public IActionResult Signout() 
+        {
+            _SignInManager.SignOutAsync();
+            return View("Login");
+        }
+
 
     }
 }

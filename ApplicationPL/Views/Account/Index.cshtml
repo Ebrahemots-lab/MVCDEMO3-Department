@@ -5,26 +5,32 @@
     Layout = "~/Views/Shared/AuthLayout.cshtml";
 }
 
-<div asp-validation-summary="All"></div>
+
 
 <div class="main-agileinfo">
     <div class="agileits-top">
+        <div asp-validation-summary="All"></div>
         <form ASP-action="Register" method="post">
-            <input class="text" asp-for="Fname" placeholder="First Name">
+            <labrl style="color:white;padding-bottom:10px">First Name</labrl>
+            <input class="text" asp-for="Fname" >
             <span asp-validation-for="Fname" class="text-danger"></span>
-
+            <br />
+            <labrl style="color:white;padding-bottom:10px">Last Name</labrl>
             <input class="text" asp-for="Lname" placeholder="Laste Name">
             <span asp-validation-for="Lname" class="text-danger"></span>
-
+            <br />
+            <labrl style="color:white;padding-bottom:10px">Email</labrl>
             <input class="text" asp-for="Email" placeholder="Email">
             <span asp-validation-for="Email" class="text-danger"></span>
-
+            <br />
+           <labrl style="color:white;padding-bottom:10px">Password</labrl>
             <input class="text" asp-for="Password" placeholder="Password">
             <span asp-validation-for="Password" class="text-danger"></span>
-
+            <br />
+            <labrl style="color:white;padding-bottom:10px">Confirm Password</labrl>
             <input class="text" asp-for="ConfirmPassword" placeholder="ConfirmPassword">
             <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-           
+            <br />
             <div class="wthree-text">
                 <label class="anim">
                     <input asp-for="IsAgree" class="checkbox">
